@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-Application<java-extract-pdf-pages>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "dev.luizveronesi.ocr.Application",
+      "projectName": "java-extract-pdf-pages",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

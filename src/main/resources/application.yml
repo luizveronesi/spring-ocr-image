@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /
+app:
+  documentation:
+    name: Spring OCR Image
+    version: 0.0.1
+  azure:
+    computer:
+      vision:
+        subscriptionKey: ${AZURE_COMPUTER_VISION_KEY}
+        endpoint: ${AZURE_COMPUTER_VISION_ENDPOINT}
+  aws:
+    region:
+      static: us-east-1
+    credentials:
+      access-key: ${AWS_ACCESS_KEY}
+      secret-key: ${AWS_SECRET_KEY}
+    textract:
+      endpoint: https://textract.us-east-1.amazonaws.com
