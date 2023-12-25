@@ -38,7 +38,7 @@ public class AzureComputerVisionStrategy implements OcrStrategy {
     private String endpoint;
 
     public OcrResponse extract(OcrRequest request) {
-        ComputerVisionClient client = this.authenticate(subscriptionKey, endpoint);
+        ComputerVisionClient client = this.authenticate();
         ComputerVisionImpl vision = (ComputerVisionImpl) client.computerVision();
 
         String operationLocation;
@@ -148,7 +148,7 @@ public class AzureComputerVisionStrategy implements OcrStrategy {
                 "Something went wrong: Couldn't extract the operation id from the operation location");
     }
 
-    private ComputerVisionClient authenticate(String subscriptionKey, String endpoint) {
+    private ComputerVisionClient authenticate() {
         return ComputerVisionManager.authenticate(subscriptionKey).withEndpoint(endpoint);
     }
 
