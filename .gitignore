@@ -4,3 +4,5 @@
 .history/
 .settings/
 .metadata/
+.classpath
+.project

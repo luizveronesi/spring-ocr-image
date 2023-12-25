@@ -26,7 +26,7 @@
 		<commons.io.version>2.15.1</commons.io.version>
 		<springdoc.version>1.6.13</springdoc.version>
 		<aws.textract.version>1.12.625</aws.textract.version>
-		<azure.computervsion.version>1.0.9-beta</azure.computervsion.version>
+		<azure.computervision.version>1.0.9-beta</azure.computervision.version>
 		<aws.s3.version>3.1.0</aws.s3.version>
 	</properties>
 
@@ -65,7 +65,7 @@
 		<dependency>
 			<groupId>com.microsoft.azure.cognitiveservices</groupId>
 			<artifactId>azure-cognitiveservices-computervision</artifactId>
-			<version>${azure.computervsion.version}</version>
+			<version>${azure.computervision.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
